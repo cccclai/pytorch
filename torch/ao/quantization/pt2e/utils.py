@@ -8,6 +8,7 @@ import torch.nn.functional as F
 
 # Makes sure that quantized_decomposed ops are registered
 from torch.ao.quantization.fx._decomposed import quantized_decomposed_lib  # noqa: F401
+import torch.ao.quantization.pt2e._affine_quantization  # noqa: F401
 from torch.ao.quantization.quantizer import QuantizationAnnotation
 from torch.export.unflatten import _assign_attr, _AttrKind
 from torch.fx import GraphModule, Node
